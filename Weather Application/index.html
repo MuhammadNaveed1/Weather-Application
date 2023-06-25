@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="maincontainer" id="main-container">
+            <div class="weatherdetailmaincontainer">
+                <div class="halfbox1 halfbox">
+                    <div class="leftbox">
+                        <div class="input-search">
+                        <input type="text" name="" id="search-input" placeholder="Search City">
+                        <button onclick="searchCity()">🔍</button>
+                    </div>
+                    <div class="temp-image">
+                        <img src="weather-image/clear-day.svg" alt="" id="weather-img">
+                    </div>
+                    <div class="temprature">
+                        <h1 id="temprature">temprature<sup id="celsius">°C</sup></h1>
+                            <h2 id="description">description</h2>
+                    </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="city-country">
+                            <h1 id="city">City</h1>
+                            <h1 id="country">Country</h1>
+                        </div>
+                        <div class="date-time">
+                            <h1 id="date">00/00/00</h1>
+                        </div>
+                        <div class="date-time time">
+                            <h1 id="time">00:00:00</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="halfbox2 halfbox">
+                    <div class="leftbox">
+                        <div class="temp weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/temprature.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>Temprature</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="temp"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visibility weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/visibility.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>Visibility</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="visibility"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pressure weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/pressure.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>Pressure</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="pressure"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="humidity weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/humidity.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>Humidity</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="humidity"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloud weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/cloud.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>cloud cover</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="cloud-cover"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wind weather-details-div">
+                            <div class="weather-details-img">
+                                <img src="image/wind.svg" alt="">
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-details-text">
+                                    <p>Wind</p>
+                                </div>
+                                <div class="weather-details-percent">
+                                    <p id="wind"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>

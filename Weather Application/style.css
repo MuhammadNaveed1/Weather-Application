@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.maincontainer {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+   background-image: url(weather-image/day.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+}
+.weatherdetailmaincontainer {
+    width: 800px;
+    height: 80vh;
+    margin: auto auto;
+    box-sizing: border-box;
+}
+.halfbox1 {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+.halfbox2 {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.halfbox {
+    display: flex;
+    justify-content: space-between;
+}
+.halfbox1 .leftbox {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-top-left-radius: 5px;
+}
+.halfbox1 .rightbox {
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    border-top-right-radius: 5px;
+}
+.halfbox2 .leftbox{
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 5px;
+}
+.halfbox2 .rightbox{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 5px;
+}
+.halfbox2 {
+    align-items: flex-end;
+} 
+.leftbox {
+    width: 45%;
+    height: 90%;
+}
+.rightbox {
+    width: 45%;
+    height: 90%;
+}
+.input-search {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-self: center;
+}
+.input-search input {
+    width: 80%;
+    margin-left: 2%;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.input-search button {
+    width: 15%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 2%;
+}
+.input-search button:hover {
+    cursor: pointer;
+}
+.city-country {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.city-country h1{
+    font-size: 28px;
+    margin-inline: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.temp-image {
+    width: 100%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.temp-image img{
+    width: 80%;
+    height: 80%;
+}
+.date-time {
+    box-sizing: border-box;
+    width: 100%;
+    height: 35%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.date-time h1 {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+.time {
+    justify-content: flex-end;
+    height: 26%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.time h1 {
+    font-size: 20px;
+    margin-right: 1%;
+    color: white;
+}
+.temprature {
+    width: 100%;
+    height: 26%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+.temprature h1 {
+    width: 80%;
+    height: 60%;
+    color: white;
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+}
+.temprature h2 {
+    width: 80%;
+    height: 40%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.weather-details-div {
+    width: 100%;
+    height: 28%;
+    margin-top: 4%;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    display: flex;
+}
+.weather-details-img {
+    height: 100%;
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-details-img img {
+    width: 50%;
+    height: 50%;
+}
+.weather-details {
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.weather-details-text {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+.weather-details-text p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.weather-details-percent {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.weather-details-percent p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.wind {
+    border: none;
+}
+.pressure {
+    border: none;
+}
+@media screen and (max-height:650px) {
+    .weatherdetailmaincontainer {
+        height: 600px;
+    }
+}
+@media  screen and (max-width:800px) {
+    .weatherdetailmaincontainer {
+        width: 600px;
+        height: 600px;
+    }
+}
+@media  screen and (max-width:600px) {
+    .weatherdetailmaincontainer {
+        width: 500px;
+    }
+    .weather-details-img img {
+        width: 70%;
+        height: 70%;
+    }
+}
+@media  screen and (max-width:500px) {
+    .weatherdetailmaincontainer {
+        width: 300px;
+        height: 100%;
+    }
+    .halfbox {
+        display: block;
+    }
+    .halfbox1 .leftbox {
+        border: none;
+        width: 100%;
+    }
+    .halfbox1 .rightbox {
+        border: none;
+        width: 100%;
+    }
+    .halfbox2 .leftbox{
+        border: none;
+        width: 100%;
+    }
+    .halfbox2 .rightbox{
+        border: none;
+        width: 100%;
+    }
+    .pressure {
+        border-bottom: 1px solid white;
+    }
+    .temp-image img{
+        width: 50%;
+        height: 50%;
+    }
+    .temp-image {
+        margin-top: 0;
+        justify-content: center;
+    }
+    .date-time {
+        margin-top: 0;
+     }
+     .date-time h1{
+        font-size: 20px;
+     }
+     .time h1 {
+        font-size: 16px;
+     }
+     .temprature h1 {
+        height: 100%;
+        width: 100%;
+        font-size: 28px;
+     }
+     .temprature h2 {
+        height: 100%;
+        width: 100%;
+        font-size: 24px;
+     }
+     .weather-details-div {
+        margin-top: 10%;
+     }
+     .weather-details-text p {
+        font-size: 100%;
+     }
+     .input-search {
+        margin-top: 15%;
+          }
+}
+@media  screen and (max-width:200px) {
+    .input-search {
+        width: 100%;
+        display: block;
+    }
+    .input-search input {
+        width: 100%;
+        height: 100%;
+    }
+}
