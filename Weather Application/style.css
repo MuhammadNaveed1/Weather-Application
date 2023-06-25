@@ -307,6 +307,9 @@
           }
 }
 @media  screen and (max-width:200px) {
+    .weatherdetailmaincontainer {
+        width: 90%;
+    }
     .input-search {
         width: 100%;
         display: block;
